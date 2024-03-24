@@ -7,3 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+img{
+  width: 100%;
+  height: 100%;
+}
+
+:where(html,body)::-webkit-scrollbar{
+  width: 0px;
+}

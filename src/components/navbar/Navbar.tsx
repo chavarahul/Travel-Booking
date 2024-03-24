@@ -14,16 +14,16 @@ const Navbar = () => {
     }
   }, [])
   return (
-    <header className={`fixed top-0 w-full left-0 h-16 z-10 ${isScrolled ? "shadow-md backdrop-blur" : " "}`}>
-      <div className="h-full w-2/3 mx-auto flex items-center justify-between border border-red-500">
-        <Link href={"/"} className='flex gap-2 items-center transition-all border border-black'>
-          <h1 className={`${isScrolled ? "text-blue-600" : "text-[#cec7c7] text-2xl font-bold"}`}>
+    <header className={`fixed top-0 w-full left-0 h-16 z-10 py-5 ${isScrolled ? "shadow-md backdrop-blur" : " "}`}>
+      <div className="h-full w-2/3 mx-auto flex items-center justify-between ">
+        <Link href={"/"} className='flex gap-2 items-center transition-all '>
+          <h1 className={`${isScrolled ? "text-blue-600" : "text-white text-2xl font-bold"}`}>
             TravelGod
           </h1>
-          <AiOutlineHome
+          {/* <AiOutlineHome
             size={25}
             color={`${isScrolled ? "rgb(37 99 235)" : "#cec7c7"}`}
-          />
+          /> */}
         </Link>
         <div>
           <div className='cursor-pointer' onClick={toggleModal}>
@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
           {
             showModal && (
-              <div onClick={toggleModal} className=" border border-red-500 absolute top-16 right-[250px] shadow-md flex gap-4 flex-col p-4 bg-white rounded-xl">
+              <div onClick={toggleModal} className="  absolute top-16 right-[250px] shadow-md flex gap-4 flex-col p-4 bg-white rounded-xl">
                 <Link href={'/reservations'}>
                   Reservations
                 </Link>
