@@ -13,3 +13,17 @@ category:string,
 reviews:number,
 location:string
 }
+
+export interface Reserve{
+ 
+    id: string;
+    listingId: number;
+    image: StaticImageData;
+    location: string;
+    name: string;
+    startDate: Date;
+    endDate: Date;
+    daysDifference: number;
+    pricePerNight: number;
+
+}

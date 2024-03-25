@@ -33,9 +33,9 @@ const BestHotels = () => {
           Explore Top
         </h5>
         <h2 className="text-4x1 ☐ text-slate-800 font-bold mt-6 mb-12">
-          Best Hotels
+          Best Hotels..
         </h2>
-        <div className="flex flex-wrap items-center gap-14">
+        <div className="flex flex-wrap items-center gap-14 mx-auto">
           {data?.map((item:Hotel,index:number)=>(
             <Card key={index} loc={item} />
           ))}

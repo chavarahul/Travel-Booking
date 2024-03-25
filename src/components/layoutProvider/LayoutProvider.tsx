@@ -10,9 +10,9 @@ const LayoutProvider = ({children}:Child) => {
     const path = usePathname()
   return (
     <>
-   {path!=='/login' && path!=='/signup' && <Navbar/>}
+   {path!=='/Login' && path!=='/signup' && <Navbar/>}
    {children}
-   {path!=='/login' && path!=='/signup' && <Footer/>}
+   {path!=='/Login' && path!=='/signup' && <Footer/>}
    </>
   )
 }
