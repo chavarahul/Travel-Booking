@@ -1,5 +1,5 @@
 import React from 'react'
-import ClipLoader from 'react-loader-spinner'
+import ClipLoader from 'react-spinners'
 const Button = ({disabled,label,className}:any) => {
     const def = "w-2/3 bg-blue-500 text-white px-4 py-2 ronded-xl disabled:bg-blue-700"
   return (
@@ -8,7 +8,7 @@ const Button = ({disabled,label,className}:any) => {
     className={className?className:def}
     >
            {
-            disabled ? "Hlo":label
+            disabled ? "Submit":label
            }
     </button>
   )
