@@ -5,6 +5,7 @@ import "./globals.css";
 import Toast from'@/utils/toast'
 import LayoutProvider from "@/components/layoutProvider/LayoutProvider";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,12 +17,15 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>)
+// const r =p;
+{
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Toast/>
         <LayoutProvider>
+       <Toast/>
           {children}
         </LayoutProvider>
       </body>
